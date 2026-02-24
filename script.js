@@ -1,4 +1,4 @@
-const text = "Junior SOC Analyst | Blue Team | Cybersecurity Enthusiast";
+const text = "Junior SOC Analyst | Blue Team | Cybersecurity Engineer";
 let index = 0;
 
 function typeEffect() {
