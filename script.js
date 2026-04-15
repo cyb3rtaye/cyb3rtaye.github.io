@@ -4,11 +4,13 @@ let index = 0;
 function typeEffect() {
     const typingElement = document.querySelector(".typing");
 
+    if (!typingElement) return;
+
     if (index < text.length) {
         typingElement.textContent += text.charAt(index);
         index++;
-        setTimeout(typeEffect, 70);
+        setTimeout(typeEffect, 60);
     }
 }
 
-window.onload = typeEffect;
+document.addEventListener("DOMContentLoaded", typeEffect);

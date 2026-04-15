@@ -91,6 +91,17 @@ a:hover {
     line-height: 1.6;
 }
 
+/* ✅ Improvement 1: Better spacing for project links */
+.card ul li a {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* ✅ Improvement 2: Better readability for text */
+.card p {
+    line-height: 1.7;
+}
+
 /* Footer */
 footer {
     text-align: center;
