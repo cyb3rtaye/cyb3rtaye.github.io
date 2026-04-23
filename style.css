@@ -61,15 +61,18 @@ header {
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 255, 200, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(88, 166, 255, 0.08);
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.14);
 }
 
 h2 {
     color: #00ffcc;
+    margin-top: 0;
 }
 
 a {
@@ -87,25 +90,39 @@ a:hover {
 }
 
 .card ul li {
-    margin-bottom: 15px;
-    line-height: 1.6;
+    margin-bottom: 18px;
+    line-height: 1.7;
 }
 
-/* ✅ Improvement 1: Better spacing for project links */
 .card ul li a {
     display: inline-block;
     margin-top: 5px;
 }
 
-/* ✅ Improvement 2: Better readability for text */
 .card p {
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
     color: #8b949e;
+}
+
+@media (max-width: 768px) {
+    .glow {
+        font-size: 2.2rem;
+    }
+
+    .typing {
+        font-size: 1rem;
+        padding: 0 10px;
+        white-space: normal;
+    }
+
+    .card {
+        margin: 20px 15px;
+        padding: 24px;
+    }
 }

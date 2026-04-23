@@ -1,8 +1,8 @@
-const text = "Aspiring SOC Analyst | Blue Team | Threat Detection | Log Analysis";
+const text = "Cyber Security | Security Monitoring | Detection | Penetration Testing";
 let index = 0;
 
 function typeEffect() {
-    const typingElement = document.querySelector(".typing");
+    const typingElement = document.querySelector('.typing');
 
     if (!typingElement) return;
 
@@ -13,4 +13,4 @@ function typeEffect() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", typeEffect);
+document.addEventListener('DOMContentLoaded', typeEffect);
